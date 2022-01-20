@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" type="image/x-icon" href="img/bird.png" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" runat="server" />
+    <link href="~/css/default.css" rel="stylesheet" runat="server" />
+</head>
+
+<body>
+
+    <nav>
+        <a asp-controller="JacobSite" asp-action="Index">Home</a>
+        <a asp-controller="JacobSite" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+
+</body>
+
+</html>
